@@ -1,0 +1,26 @@
+[
+  {
+    "username": "Kausar",
+    "number": "02423532",
+    "address": "Dinajpur, Banlgadesh",
+    "role": "Developer"
+  },
+  {
+    "username": "Alamin",
+    "number": "3525254",
+    "address": "Rangpur, Banlgadesh",
+    "role": "Engineer"
+  },
+  {
+    "username": "Hakim",
+    "number": "599998436",
+    "address": "Thakurgaon, Banlgadesh",
+    "role": "Businessman"
+  },
+  {
+    "username": "Aman",
+    "number": "58394256",
+    "address": "Khulna, Banlgadesh",
+    "role": "Doctor"
+  }
+]

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form Project</title>
+    <link rel="stylesheet" href="./src/main.css" />
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <div class="w-full max-w-md bg-white rounded-lg shadow-sm p-10">
+        <h1
+          id="heading"
+          class="text-2xl font-bold text-gray-800 text-center mb-3"
+        >
+          Login Form
+        </h1>
+
+        <form action="">
+          <div class="" id="allDetails">
+            <div class="">
+              <label for="name" class="block text-xs text-gray-600"
+                >Name:</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+            <div class="mt-2">
+              <label for="email" class="block text-xs text-gray-600"
+                >Email:</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div class="mt-2">
+              <label for="password" class="block text-xs text-gray-600"
+                >Password:</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <a href="https://unsplash.com/s/photos/programmer" target="">
+              <img
+                src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZ3JhbW1lcnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="programmer"
+                class="w-full cursor-pointer hidden"
+                id="img"
+              />
+            </a>
+            <div class="">
+              <button
+                type="submit"
+                id="button_in"
+                class="w-full bg-indigo-600 text-white p-2 mt-2 rounded-md cursor-pointer"
+              >
+                Login
+              </button>
+              <button
+                type="submit"
+                id="button_out"
+                class="w-full bg-indigo-600 text-white p-2 mt-2 rounded-md cursor-pointer hidden"
+              >
+                Log Out
+              </button>
+            </div>
+            <div class="hidden" id="information">
+              <h2 class="text-center mt-5 font-semibold">User Information</h2>
+              <p class="text-gray-300">Name: <span id="outputName"></span></p>
+              <p class="text-gray-300">Email: <span id="outputEmail"></span></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- js link -->
+
+    <script src="./JS/app.js"></script>
+    <!-- <script src="./JS/script.js"></script> -->
+  </body>
+</html>
