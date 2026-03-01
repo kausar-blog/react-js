@@ -9,13 +9,14 @@ import Error from "./Components/Error";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="*" element={<Error />} />
+        <Route path="" element={<Navbar />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="*" element={<Error />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

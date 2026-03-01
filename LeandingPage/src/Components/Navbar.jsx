@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 function Navbar() {
   return (
     <>
@@ -9,19 +9,20 @@ function Navbar() {
 
           <ul className="flex gap-6 text-white font-bold">
             <li className="hover:underline cursor-pointer">
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="hover:underline cursor-pointer">
-              <Link to="/About">About</Link>
+              <NavLink to="/About">About</NavLink>
             </li>
             <li className="hover:underline cursor-pointer">
-              <Link to="/Contact">Contact</Link>
+              <NavLink to="/Contact">Contact</NavLink>
             </li>
             <li className="hover:underline cursor-pointer">
-              <Link to="/Signup">Sign Up</Link>
+              <NavLink to="/Signup">Sign Up</NavLink>
             </li>
           </ul>
         </nav>
+        <Outlet />
       </div>
     </>
   );
